@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.bandicootwizard" name="Bandicoot Wizard" version="1.0.6" provider-name="Bandicoot Builds">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Bandicootbuilds installation wizard</summary>
+		<description lang="en">This software is designed to install a custom setup from bandicoot builds to your kodi or spmc device</description>
+		<disclaimer lang="en">For help and support please visit https://www.facebook.com/groups/bandicootbuilds/</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

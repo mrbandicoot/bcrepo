@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.bandicootwizard" name="Bandicoot Wizard" version="1.0.6" provider-name="Bandicoot Builds">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+		<summary lang="en">Bandicootbuilds installation wizard</summary>
+		<description lang="en">This software is designed to install a custom setup from bandicoot builds to your kodi or spmc device</description>
+		<disclaimer lang="en">For help and support please visit https://www.facebook.com/groups/bandicootbuilds/</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+    <addon id="repository.bandicootbuilds" name="Bandicoot Builds Repository" version="1.0.4" provider-name="Bandicoot Builds">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Bandicoot Builds Repository">
+            <info compressed="false">https://raw.githubusercontent.com/mrbandicoot/bcrepo/_repo/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mrbandicoot/bcrepo/_repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mrbandicoot/bcrepo/_repo/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Install add-ons from the bandicootbuilds repository</summary>
+            <description>Having this repository installed will ensure that you will always have the latest versions of the bandicoot wizard and other add-ons from bandicoot builds, for help and support please visit https://www.facebook.com/groups/bandicootbuilds</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+</addons>
